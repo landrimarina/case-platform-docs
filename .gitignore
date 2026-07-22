@@ -1,0 +1,19 @@
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build e dipendenze
+node_modules/
+dist/
+target/
+coverage/
+
+# Configurazioni locali e segreti
+.env
+.env.local
+*.local
+*.log
