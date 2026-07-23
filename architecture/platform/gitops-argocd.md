@@ -396,3 +396,13 @@ La guida operativa dedicata descriverà in seguito:
 - `development/local-development-environment.md`
 - future guide operative in `development/guides`
 
+## 20. Forzare Argocd a vedere develop che è il source che abbiamo definito nel manifest
+kubectl annotate application case-platform-bootstrap \
+  -n argocd \
+  argocd.argoproj.io/refresh=hard \
+  --overwrite
+## 21 aprire interfaccia argocd
+  Per aprire l’interfaccia locale di Argo CD, esegui nel terminale di VS Code:
+    kubectl port-forward svc/argocd-server -n argocd 8080:443
+    poi http://localhost:8080
+    admin/GhtC7Efrvv19Py04
