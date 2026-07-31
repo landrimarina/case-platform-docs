@@ -177,3 +177,12 @@ development/local-environment/postgresql-installation.md
 ```
 
 Le convenzioni per le migrazioni dei database applicativi saranno descritte nella documentazione di sviluppo backend.
+
+## PostgreSQL da DBeaver (DB x Keycloak)
+
+kubectl port-forward \
+  -n case-platform-data \
+  service/case-platform-postgresql-rw \
+  15432:5432
+
+  keycloak/GhtC7Efrvv19Py04
