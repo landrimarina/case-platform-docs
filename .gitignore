@@ -5,6 +5,7 @@
 # OS
 .DS_Store
 Thumbs.db
+*.Zone.Identifier
 
 # Build e dipendenze
 node_modules/
